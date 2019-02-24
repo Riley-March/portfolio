@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>RM Portfolio</title>
+        <link rel="stylesheet" href="/bower_components/pure/pure-min.css">
+        <link rel="stylesheet" href="/bower_components/devicon/devicon.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="pure-menu pure-menu-horizontal">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item">
+                        <a href="/index.html" class="pure-menu-link">
+                            <i class="fa fa-home" aria-hidden="true"></i> Home
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/app/html/about.html" class="pure-menu-link">
+                            <i class="fa fa-user" aria-hidden="true"></i> About
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/app/html/work.html" class="pure-menu-link">
+                            <i class="fa fa-folder-open" aria-hidden="true"></i> Portfolio
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <img src="../images/snipeclub_logo.png" class="img-responsive" width="250" height="250">
+            <h3>Snipe Club</h3>
+            <p>
+                Snipe club was our attempt to join the Agar.io craze. We were sitting at university one day, playing the stupid game when we read about how only 1 person made it.
+                So we were like why don't we just make our own game but better. How hard could it be to make a multiplayer game? If only we knew then what we were getting
+                ourselves into. The game we set out to make was a free-for-all shooter, where you walk around a massive rectangular playing field and kill other people for
+                points. You would only have one type of gun, a sniper rifle which has a slow reload time. So it would rely heavily on skill to aim up the perfect shot. There
+                would be destroyable walls that you can hide behind and the game would be endless. After what seemed like endless amounts of pivoting the idea that we ended up
+                with was a game where you collect pellets and try to run into other players. The gameplay is not entirely finished seeing as one of the creators left to make his
+                own multiplayer game, so the demo is the last iteration before his departure.
+            <br><br>
+            For the server we used Node.js and Socket.io. Socket.io is a libary that makes using web sockets alot easier. The documentation is excellent and we managed to have
+                a simple chat working with a few lines of code. One of biggest challenges was server side prediction and it still haunts me to this day. For the main game we used
+                the default html5 canvas. This allowed for lightweight basic graphics and it was easy to control via with client side javascript. The color scheme that we tried
+                to go for was a 80’s retro look. The deep purples and pinks really gave it a cool, different vibe. We also wanted to add in some really awesome pop synth music
+                for it. It's a shame it never turned into anything big and it kinda looks like a clone of slither.io, but it was still a good project to work on.
+            </p>
+            <a href="http://gunmmo-drksft.rhcloud.com/" class="pure-button pure-button-primary" target="_blank">
+                <i class="fa fa-globe"></i> Website
+            </a>
+            <a href="https://github.com/Riley-March/Snipe-Club" class="pure-button" target="_blank">
+                <i class="fa fa-github-square"></i> Source Code
+            </a>
+            <img src="../images/snipeclub_screenshot1.png" width="300" height="500">
+            <img src="../images/snipeclub_screenshot2.png" width="300" height="500">
+            <img src="../images/snipeclub_screenshot3.png" width="300" height="500">
+        </div>
+    </body>
+    <footer>
+        <h4>Copyright Riley March</h4>
+        <h4>2017</h4>
+    </footer>
+</html>
