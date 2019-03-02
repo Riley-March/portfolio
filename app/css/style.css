@@ -23,6 +23,13 @@ h1 {
     color: #FAFAFA;
 }
 
+h2{
+    margin: 4px;
+}
+h6 {
+    margin: 3px;
+}
+
 header{
     height: 80vh;
     background-image: linear-gradient(rgba(255, 241, 124, 0.65), rgba(55, 89, 255, 0.33)), url('../images/mountain-wallpaper.webp');
@@ -94,8 +101,8 @@ header::after{
     height: 4em;
     width: 8em;
     padding-top: 1px;
-    background-color: #ffffff;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);
+    /*background-color: #ffffff;*/
+    /*box-shadow: 0 1px 0 rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);*/
 }
 
 .container-fluid{
@@ -127,7 +134,6 @@ image{
 }
 
 .content-panel {
-    background-color: white;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);
-    padding: 20px;
+    /*background-color: white;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.24);*/
 }
