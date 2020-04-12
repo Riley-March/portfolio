@@ -1,0 +1,183 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.25rem;
+    margin: 0;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #5000ca;
+}
+
+.ribbon {
+    display: flex;
+    padding: 2rem;
+    background-color: #5000ca;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    padding-bottom: 0.25rem;
+    border-bottom: 0.25rem solid #5000ca;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-img{
+    border-radius: 50%;
+    border: 0.5rem solid #5000ca;
+}
+
+.bio-links {
+    margin: 1rem;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #5000ca;
+    font-weight: 500;
+}
+
+.panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    width: 80%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+}
+
+.panel-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-item {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #5000ca;
+    font-weight: 500;
+    border: solid 0.1rem #5000ca;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .bio {
+        width: 100%;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .skills {
+        width: 100%;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .grid-item {
+        font-size: 1.25rem;
+        width: 20%;
+    }
+
+    .panel-row {
+        flex-direction: column;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+
+    .panel-item {
+        font-size: 1rem;
+        width: 100%;
+        padding: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
