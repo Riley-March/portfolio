@@ -3,69 +3,81 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Riley March</title>
-        <link rel="stylesheet" href="./app/css/style.css">
-        <link rel="manifest" href="./app/manifest.json">
+        <title>Riley March - Portfolio</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="manifest" href="./manifest.json">
+        <link rel='icon' href='./images/favicon.ico' type='image/x-icon'>
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     </head>
     <body>
         <div class="ribbon"></div>
         <div class="container">
             <div class="bio">
-                <img src="./app/images/circle-cropped.png" class="pure-img img-circle" width="250" height="250" alt="Profile">
+                <img src="./images/profile.png" class="bio-img" width="250" height="250" alt="Profile">
                 <h1 class="title">Riley March</h1>
                 <div class="row">
-                    <a class="bio-link" href="https://www.linkedin.com/in/riley-march-a05329111/" target="_blank">
+                    <a class="bio-links" href="https://www.linkedin.com/in/riley-march-a05329111/" target="_blank">
                         <i class="fab fa-linkedin fa-2x"></i>
                     </a>
-                    <a class="bio-link" href="https://twitter.com/riley_march" target="_blank">
+                    <a class="bio-links" href="https://twitter.com/riley_march" target="_blank">
                         <i class="fab fa-twitter-square fa-2x"></i>
                     </a>
-                    <a class="bio-link" href="https://github.com/Riley-March" target="_blank">
+                    <a class="bio-links" href="https://github.com/Riley-March" target="_blank">
                         <i class="fab fa-github-square fa-2x"></i>
                     </a>
-                    <a class="bio-link" href="mailto:riley.j.march@outlook.com">
+                    <a class="bio-links" href="mailto:riley.j.march@outlook.com">
                         <i class="fas fa-envelope-square fa-2x"></i>
                     </a>
                 </div>
             </div>
-            <div class="skill-grid">
+            <div class="skills">
                 <h2 class="title">Programming Languages</h2>
-                <div class="row">
-                    <div class="grid-item"><i class="fab fa-js fa-2x"></i> Javascript</div>
-                    <div class="grid-item"><i class="fab fa-python fa-2x"></i> Python</div>
-                    <div class="grid-item"><i class="fab fa-java fa-2x"></i> Java</div>
+                <div class="grid-row">
+                    <div class="grid-item"><i class="fab fa-js fa-2x"></i><h4>Javascript</h4></div>
+                    <div class="grid-item"><i class="fab fa-python fa-2x"></i><h4>Python</h4></div>
+                    <div class="grid-item"><i class="fab fa-java fa-2x"></i><h4>Java</h4></div>
                 </div>
                 <h2 class="title">Frameworks</h2>
-                <div class="row">
-                    <div class="grid-item"><i class="fab fa-node fa-2x"></i></i> Node JS</div>
-                    <div class="grid-item"><i class="fab fa-angular fa-2x"></i> Angular</div>
-                    <div class="grid-item"><i class="fab fa-react fa-2x"></i> React</div>
+                <div class="grid-row">
+                    <div class="grid-item"><i class="fab fa-node fa-2x"></i></i><h4>Node JS</h4></div>
+                    <div class="grid-item"><i class="fab fa-angular fa-2x"></i><h4>Angular</h4></div>
+                    <div class="grid-item"><i class="fab fa-react fa-2x"></i><h4>React</h4></div>
                 </div>
                 <h2 class="title">Developer Tools</h2>
-                <div class="row">
-                    <div class="grid-item"><i class="fab fa-docker fa-2x"></i> Docker</div>
-                    <div class="grid-item"><i class="fab fa-jenkins fa-2x"></i>Jenkins</div>
-                    <div class="grid-item"><i class="fab fa-aws fa-2x"></i> AWS</div>
+                <div class="grid-row">
+                    <div class="grid-item"><i class="fab fa-docker fa-2x"></i><h4>Docker</h4></div>
+                    <div class="grid-item"><i class="fab fa-jenkins fa-2x"></i><h4>Jenkins</h4></div>
+                    <div class="grid-item"><i class="fab fa-aws fa-2x"></i><h4>AWS</h4></div>
                 </div>
             </div>
         </div>
         <div class="panel-container">
             <h2 class="title">Projects</h2>
             <div class="panel">
-                <div class="row">
-                    <div class="panel-item"><i class="fab fa-react fa-2x"></i> Splendy</div>
-                    <div class="panel-item"><i class="fab fa-angular fa-2x"></i> Unisphere</div>
-                    <div class="panel-item"><i class="fab fa-react fa-2x"></i> Schedulr_</div>
+                <div class="panel-row">
+                    <div class="panel-item" onclick="window.open('https://github.com/Riley-March/Schedulr-web', '_blank')">
+                        <i class="fab fa-react fa-2x"></i><h4>Splendy</h4>
+                    </div>
+                    <div class="panel-item" onclick="window.open('https://github.com/Riley-March/Schedulr-web', '_blank')">
+                        <i class="fab fa-angular fa-2x"></i><h4>Unisphere</h4>
+                    </div>
+                    <div class="panel-item" onclick="window.open('https://github.com/Riley-March/Schedulr-web', '_blank')">
+                        <i class="fab fa-react fa-2x"></i><h4>Schedulr_</h4>
+                    </div>
                 </div>
             </div>
             <h2 class="title">About</h2>
             <div class="panel">
-                I am a full stack/DevOps engineer looking to learn and explore different fields in the information technology industry.
-                <br>
-                I have proven knowledge and skills in popular web languages and technologies as well as devop's best practices.
-                <br><br>
-                I am currently working for the Cairns Regional Council as a Device Support Officer
+                <p>
+                    I am a full stack engineer that specializes in creating modern responsive web apps.
+                    <br>
+                    I am currently working for the Cairns Regional Council as a Device Support Officer.                
+                </p><br>
+                <div class="panel-row">
+                    <div class="panel-item" onclick="window.open('https://github.com/Riley-March/Schedulr-web', '_blank')">
+                        <i class="far fa-file-pdf fa-2x"></i><h4>Resume</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </body>
