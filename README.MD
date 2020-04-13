@@ -1,9 +1,7 @@
 # Riley March Portfolio
 > This is the repository for my web portfolio. Carefully designed using only pure HTML and CSS
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+[![CircleCI](https://circleci.com/gh/Riley-March/Portfolio.svg?style=svg)](https://circleci.com/gh/Riley-March/Portfolio)
 
 One to two paragraph statement about your product and what it does.
 
