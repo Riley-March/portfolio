@@ -1,25 +1,9 @@
 # Riley March Portfolio
 > This is the repository for my web portfolio. Carefully designed using only pure HTML and CSS
 
-[![CircleCI](https://circleci.com/gh/Riley-March/Portfolio.svg?style=svg)](https://circleci.com/gh/Riley-March/Portfolio)
-
 One to two paragraph statement about your product and what it does.
 
 ![](images/portfolio-screeenshot.png)
-
-## Installations
-
-OS X & Linux:
-
-```sh
-npm install my-crazy-module --save
-```
-
-Windows:
-
-```sh
-edit autoexec.bat
-```
 
 ## Usage example
 
