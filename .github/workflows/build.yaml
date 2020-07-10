@@ -1,0 +1,38 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Publish to Github Packages
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
+        name: riley-march/portfolio/portfolio
+        registry: docker.pkg.github.com
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+        dockerfile: Dockerfile
+        tags: latest
+    - name: Deploy app on digital ocean
+      uses: appleboy/ssh-action@master
+      env:
+          GITHUB_USERNAME: ${{ secrets.USERNAME }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.SSH_USERNAME }}
+        password: ${{ secrets.SSH_PASSWORD }}
+        port: ${{ secrets.PORT }}
+        envs: GITHUB_USERNAME, GITHUB_TOKEN
+        script: |
+          docker login docker.pkg.github.com -u $GITHUB_USERNAME -p $GITHUB_TOKEN
+          docker pull docker.pkg.github.com/riley-march/portfolio/portfolio:latest
+          docker stop portfolio 
+          docker rm portfolio 
+          docker run -d -p 1000:80 --name portfolio docker.pkg.github.com/riley-march/portfolio/portfolio:latest 
