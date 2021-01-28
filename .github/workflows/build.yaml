@@ -35,4 +35,4 @@ jobs:
           docker pull docker.pkg.github.com/riley-march/portfolio/portfolio:latest
           docker stop portfolio 
           docker rm portfolio 
-          docker run -d -p 1000:80 --name portfolio docker.pkg.github.com/riley-march/portfolio/portfolio:latest 
+          docker run -d -p 1000:80 --name portfolio -e VIRTUAL_HOST=rileymarch.dev -e LETSENCRYPTHOST=rileymarch.dev --network nginx-proxy docker.pkg.github.com/riley-march/portfolio/portfolio:latest 
