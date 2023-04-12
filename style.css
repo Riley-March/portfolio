@@ -31,15 +31,17 @@ a {
     color: white;
 }
 
-.container {
+.layout {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    max-width: 1200px;
-    margin: auto;
+    background-color: #5000CA;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: red;
 }
 
 .title {
